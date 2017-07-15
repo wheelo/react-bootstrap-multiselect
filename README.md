@@ -1,5 +1,5 @@
 # react-bootstrap-multiselect
-Yet another multi-select component for React. This component works as the react version of bootstrap-multiselect ^^
+Yet another multi-select component for React. This component works as the react version of bootstrap-multiselect ^^. Inspired by https://github.com/skratchdot/react-bootstrap-multiselect
 
 ## Description
 * Support Async initialization and Dynamic update.
@@ -18,6 +18,6 @@ let ReactSelectView = require('./react-bootstrap-multiselect.js');
 ```
 * 
 ## Notice
-* You should integrate the bootstrap-multiselect framework before you can use it
-* You should set `shouldSelectUpdate` be `true` whe performin dynamic update, and *** Parent React Component should set the value passed to `shouldSelectUpdate` be false in its `componentDidUpdate` life cycle ****
+* You should integrate the jQuery & bootstrap-multiselect framework before you use it.
+* You should set `shouldSelectUpdate` be `true` whe performin dynamic update, and *** Parent React Component should set the value passed to `shouldSelectUpdate` be false in its `componentDidUpdate` life cycle ****.
 
