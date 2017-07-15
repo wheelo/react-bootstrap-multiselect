@@ -8,7 +8,7 @@ var SelectView = React.createClass({
     },
 
     componentDidMount(){
-        this.$selectDom = $(React.findDOMNode(this.refs["select"+this.props.value]));
+        this.$selectDom = $(React.findDOMNode(this.refs["select"+this.props.name]));
         this.initSelectView();
     },
 
@@ -94,7 +94,7 @@ var SelectView = React.createClass({
 
         this.$selectDom.multiselect(json);
 
-        var $selectPanelDom = $(React.findDOMNode(this.refs["selectPanel"+this.props.value]));
+        var $selectPanelDom = $(React.findDOMNode(this.refs["selectPanel"+this.props.name]));
 
         if(object instanceof Array){
             if(object.length == 0){
@@ -123,8 +123,8 @@ var SelectView = React.createClass({
         }
 
         return (
-            <div ref={"selectPanel"+this.props.value} className="btn-group">
-                <select ref={"select"+this.props.value} size="2" multiple={this.props.isMultiple ? "multiple" : null}>
+            <div ref={"selectPanel"+this.props.name} className="btn-group">
+                <select ref={"select"+this.props.name} size="2" multiple={this.props.isMultiple ? "multiple" : null}>
                     {
                         liArr
                     }
