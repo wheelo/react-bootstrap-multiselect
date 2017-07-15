@@ -1,7 +1,7 @@
 // create by pengxiaolong: wheelo@163.com
 // 2017.7.15
 
-var SelectView = require('./SelectView.js');
+var SelectView = require('./react-bootstrap-multiselect');
 
 var ReactSelectView = React.createClass({
 
