@@ -9,6 +9,7 @@ Yet another multi-select component for React. This component works as the react 
 ```
 let ReactSelectView = require('./react-bootstrap-multiselect.js');
 <ReactSelectView
+       name="name it"
        selectText="Choose something"
        defaultValue={default selected value}
        shouldSelectUpdate={true|false}
