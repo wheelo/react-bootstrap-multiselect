@@ -6,7 +6,7 @@ Yet another multi-select component for React. This component works as the react 
 
 ## Usage
 
-```
+```js
 let ReactSelectView = require('./react-bootstrap-multiselect.js');
 <ReactSelectView
        name="name it"
@@ -17,8 +17,7 @@ let ReactSelectView = require('./react-bootstrap-multiselect.js');
        selectEvent={this.handleChallengeEvent}
        data={provided full data}/>
 ```
-* 
-## Notice
+- Notice
 * You should integrate the jQuery & bootstrap-multiselect framework before you use it.
-* You should set `shouldSelectUpdate` be `true` whe performin dynamic update, and *** Parent React Component should set the value passed to `shouldSelectUpdate` be false in its `componentDidUpdate` life cycle ****.
+* You should set `shouldSelectUpdate` be `true` whe performin dynamic update, and **Parent React Component should set the value passed to `shouldSelectUpdate` be false in its `componentDidUpdate` life cycle**.
 
